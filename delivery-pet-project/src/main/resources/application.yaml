@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: Prudnik
+    password: DimafromBelarus1
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database: postgresql
+    properties:
+      hibernate:
+        format_sql: true
+springdoc:
+  show-actuator: true
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include:*
